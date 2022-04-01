@@ -1,25 +1,35 @@
-package complexnumber;
+package nhk;
 
-public class ComplexNumber {
-double real, img;
-ComplexNumber(double r, double i){
-	this.real = r;
-	this.img = i;
-}
+import java.util.*; 
 
-public static ComplexNumber sum(ComplexNumber c1, ComplexNumber c2)
-{
-     ComplexNumber temp = new ComplexNumber(0, 0);
-
-     temp.real = c1.real + c2.real;
-     temp.img = c1.img + c2.img;
-     return temp;
- }
-
-    public static void main(String[] args) {
-        ComplexNumber c1 = new ComplexNumber(5.1, 4);
-	ComplexNumber c2 = new ComplexNumber(10.0, 5.0);
-     ComplexNumber temp = sum(c1, c2);
-     System.out.printf("The sum is: "+ temp.real+" + "+ temp.img +"i");
- }
+public class addcomplex {
+	
+	public static void main(String [] args)
+	{
+		int a1,b1,a2,b2; //complex no = a+ib or a-ib
+		
+		Scanner inp = new Scanner(System.in);
+		System.out.println("Enter the real part of first complex no : ");
+		a1 = inp.nextInt();
+		
+		System.out.println("Enter the imaginary part of first complex no : ");
+		b1 = inp.nextInt();
+		
+		System.out.println("Enter the real part of second complex no : ");
+		a2 = inp.nextInt();
+		
+		System.out.println("Enter the imaginary part of second complex no : ");
+		b2 = inp.nextInt();
+		
+		System.out.println("The Complex numbers are  ");
+		System.out.println("First = " +a1 + "+" +b1 + "i");
+		System.out.println("Second = " +a2 + "+" +b2+ "i" );
+		
+		int a3 = a1+a2;
+		int b3 = b1+b2;
+		System.out.println("Sum of the complex numbers is "+a3 + "+"+b3+"i");
+		
+		
+	
+	}
 }
