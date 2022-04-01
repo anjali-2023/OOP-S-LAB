@@ -1,8 +1,7 @@
-package nhk;
-
+package complexnumber;
 import java.util.*; 
 
-public class addcomplex {
+public class ComplexNumber {
 	
 	public static void main(String [] args)
 	{
@@ -32,4 +31,5 @@ public class addcomplex {
 		
 	
 	}
+
 }
